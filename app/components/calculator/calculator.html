@@ -1,0 +1,38 @@
+<div id="background">
+    <!-- Main background -->
+    <div id="result">{{screen}}</div>
+    <div id="main">
+        <div id="first-rows">
+            <button class="del-bg" id="delete" (click)="keyPressed('del')">Del</button>
+            <button value="%" class="btn-style operator opera-bg fall-back" (click)="keyPressed('%')">%</button>
+            <button value="+" class="btn-style opera-bg value align operator" (click)="keyPressed('+')">+</button>
+        </div>
+
+        <div class="rows">
+            <button value="7" class="btn-style num-bg first-child" (click)="keyPressed('7')">7</button>
+            <button value="8" class="btn-style num-bg" (click)="keyPressed('8')">8</button>
+            <button value="9" class="btn-style num-bg" (click)="keyPressed('9')">9</button>
+            <button value="-" class="btn-style opera-bg operator" (click)="keyPressed('-')">-</button>
+        </div>
+
+        <div class="rows">
+            <button value="4" class="btn-style num-bg first-child" (click)="keyPressed('4')">4</button>
+            <button value="5" class="btn-style num-bg" (click)="keyPressed('5')">5</button>
+            <button value="6" class="btn-style num-bg" (click)="keyPressed('6')">6</button>
+            <button value="*" class="btn-style opera-bg operator" (click)="keyPressed('*')">x</button>
+        </div>
+
+        <div class="rows">
+            <button value="1" class="btn-style num-bg first-child" (click)="keyPressed('1')">1</button>
+            <button value="2" class="btn-style num-bg" (click)="keyPressed('2')">2</button>
+            <button value="3" class="btn-style num-bg" (click)="keyPressed('3')">3</button>
+            <button value="/" class="btn-style opera-bg" (click)="keyPressed('/')">/</button>
+        </div>
+
+        <div class="rows">
+            <button value="0" class="num-bg" id="delete" (click)="keyPressed('0')">0</button>
+            <button value="." class="btn-style num-bg fall-back" (click)="keyPressed('.')">.</button>
+            <button value="=" id="eqn-bg" class="eqn align" (click)="keyPressed('=')">=</button>
+        </div>
+    </div>
+</div>
